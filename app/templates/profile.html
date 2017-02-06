@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href = "../static/css/app.css">
+{% endblock%}
+
+{% block main %}  
+    <div><img src="{{ url_for('static', filename='goku.jpg') }}"></div>
+    <div class="profile">
+      <div class="box"><h1>Profile </h1></div>
+      <br>
+      <div class="box"><p> {{now}}</p></div>
+
+      <div class="box">
+        <p> Username: Son Goku </p>
+        <p> ID: 620061303 </p>
+        <p> Age: unknown</p>
+        <p>Gender: Male<p>
+        <p> Knockouts: 2 million </p>
+      </div>
+    </div>
+{% endblock %}
